@@ -13,6 +13,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body onload="underline_first()">
+    <div id="overlay"></div>
     <header>
         <div class="logo">
             <h2>
@@ -23,14 +24,11 @@
 
         <div id="mySidenav" class="sidenav">
             <nav>
-                <div id="account">
-                    <div style="display: flex; gap: 7px;">
-                        <i class="fa-regular fa-user"></i>
-                        <p>Not signed in</p>
-                    </div>
-                    <i class="fa-regular fa-circle-xmark" onclick="closeNav()"></i>
+                <i class="fa-regular fa-circle-xmark" onclick="closeNav()"></i>
+                <div id="button">
+                    <button id="nav_sign_in">Sign in</button>
                 </div>
-                <hr style="color: #FFFFFF; z-index: 1;">
+                <hr style="color: #ffffff;width: 90%; margin: auto;">
                 <a href="index.html" style="margin-top: 10px;">HOME</a>
                 <a href="index.html">DISCOVER</a>
                 <a href="index.html">POPULAR</a>
@@ -42,7 +40,7 @@
         <!-- element to open the sidenav -->
         <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
     </header>
-    <hr>
+
     <main>
         <div class="slogan">
             <h1>A Guide to Your Journeys, Exploration, and Adventures</h1>
@@ -59,7 +57,7 @@
             <div class="search_bar">
                 <div class="input-group mb-3">
                     <input id="search_input" type="text" class="form-control" placeholder="Search places..." aria-label="Search places..." aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass">&nbsp</i></button>
                   </div>
             </div>
         </div>
@@ -73,12 +71,15 @@
 <script type="text/javascript">
     //Menu bar overlaying
     function openNav() {
-        document.getElementById("mySidenav").style.left= "50vw";
+        document.getElementById("mySidenav").style.left= "30vw";
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("overlay").addEventListener('click', closeNav);
     }
     function closeNav() {
         document.getElementById("mySidenav").style.left = "100%";
+        document.getElementById("overlay").style.display = "none";
     }
-    
+
     var first = document.querySelector('#first');
     function underline_first() {
         marker.style.left = first.offsetLeft + 'px';

@@ -28,6 +28,20 @@ body {
     top: 0;
 }
 
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
 
 header {
     display: flex;
@@ -54,14 +68,14 @@ header {
 
 .sidenav {
     height: 100%; /* 100% Full-height */
-    width: 50vw; /* 0 width - change this with JavaScript */
+    width: 70vw; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 3; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 100%;
     background-color: #433831; 
     overflow-x: hidden; /* Disable horizontal scroll */    
-    padding-top: 15px; /* Place content 20px from the top */
+    padding-top: 10px; /* Place content 20px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -84,32 +98,33 @@ header {
     opacity: 0.5;
 }
 
-#account {
-    display: flex;
-    justify-content: space-around;
-    color: #f5f5f5;
-}
-
-#account p {
-    margin-bottom: 12px;
-}
-
 .fa-circle-xmark {
+    position: absolute;
+    right: 10px;
     font-size: 6vw;
     color: #f5f5f5 !important;
 }
 
-#account p {
-    padding: 0;
+#button {
+    text-align: center;
 }
+
+#nav_sign_in {
+    width: 80%;
+    background-color: #f5f5f5;
+    padding: 0;
+    margin: 25px 0 10px 0;
+    text-align: center;
+    border: none;
+    font-size: 4vw;
+    padding: 5px 0;
+    border-radius: 25px;
+}
+
 
 .fa-user {
     font-size: 6vw;
     color: #f5f5f5 !important;
-}
-
-hr {
-    margin: 0 !important;
 }
 
 .slogan h1 {
@@ -141,6 +156,16 @@ hr {
     bottom: 8px;
     transition: 0.5s;
     border-radius: 2px;
+}
+
+#search_input {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#button-addon2 {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 
