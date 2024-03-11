@@ -47,7 +47,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    color: #42342b;
+    color: #181818;
 }
 
 .logo h2 {
@@ -132,16 +132,16 @@ header {
     font-family: "Montserrat", sans-serif;
     font-size: 6vw;
     margin: 40px 0 15px 0;
-    color: #42342b;
+    color: #181818;
 }
 
-.categories {
+.search_categories {
     text-align: center;
     position: relative;
 }
 
-.categories button {
-    color: #42342b;
+.search_categories button {
+    color: #181818;
     padding: 0 5px;
     font-size: 4vw;
     border: none;
@@ -149,7 +149,7 @@ header {
     margin: 10px 0;
 }
 
-.categories #marker {
+.search_categories #marker {
     position: absolute;
     height: 2px;
     background-color: #42342b;
@@ -170,3 +170,21 @@ header {
 
 
 
+.swiper-slide, .img_box {
+    width: 28vw;
+}
+
+.swiper {
+    width: 90vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+.swiper-slide {
+    width: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
