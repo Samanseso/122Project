@@ -69,4 +69,14 @@ text.forEach(link => {
     });
 });
 
+var clickableImage = document.querySelectorAll('.swiper-slide img');
 
+function goTOCheckOut() {
+    window.location.href = 'file:///C:/Users/evan/Documents/120Website/122Project/check_out.html';
+}
+
+clickableImage.forEach(link => {
+    link.addEventListener('click', (e) => {
+        goTOCheckOut(e.target);
+    })
+})
