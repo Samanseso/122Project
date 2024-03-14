@@ -72,7 +72,7 @@ text.forEach(link => {
 var clickableImage = document.querySelectorAll('.swiper-slide img');
 
 function goTOCheckOut() {
-    window.location.href = 'file:///C:/Users/evan/Documents/120Website/122Project/check_out.html';
+    window.location.href = 'https://github.com/Samanseso/122Project/check_out.html';
 }
 
 clickableImage.forEach(link => {
