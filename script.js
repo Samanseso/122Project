@@ -72,7 +72,7 @@ text.forEach(link => {
 var clickableImage = document.querySelectorAll('.swiper-slide img');
 
 function goTOCheckOut() {
-    window.location.href = 'https://github.com/Samanseso/122Project/check_out.html';
+    window.location.href = 'https://samanseso.github.io/122Project/check_out.html';
 }
 
 clickableImage.forEach(link => {
@@ -80,3 +80,20 @@ clickableImage.forEach(link => {
         goTOCheckOut(e.target);
     })
 })
+
+
+var aboutText = document.querySelector('.about-text p');
+var backdrop = document.querySelector('.about-text .about-backdrop');
+var readButton = document.querySelector('.about button')
+function aboutSLideDown () {
+    if (aboutText.style.maxHeight = '12vh') {
+        aboutText.style.maxHeight = '100%';
+        backdrop.style.display = 'none';
+        readButton.innerHTML = 'Read Less';
+    }
+    else {
+        aboutText.style.maxHeight = '12vh';
+        backdrop.style.display = 'block';
+        readButton.innerHTML = 'Read Less';
+    }
+}
