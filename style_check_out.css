@@ -126,13 +126,12 @@ header {
 }
 
 .name h1 {
-
     font-family: "Montserrat", sans-serif;
-    font-size: 6vw;
     color: #181818;
 }
 
 .stars {
+    font-size: 3.5vw;
     width: auto;
     background-image: linear-gradient(90deg, gold 60%, gray 60%);
     background-clip: text;
@@ -256,7 +255,8 @@ table {
 }
 
 .title h1 {
-    margin: 0;
+    margin-bottom: 5px;
+    font-size: 8vw;
 }
 
 .title .rating  {
@@ -266,6 +266,7 @@ table {
 
 .title .rating .count {
     margin-bottom: 8px;
+    font-size: 3.5vw;
 }
 
 .action {
@@ -290,7 +291,7 @@ table {
 
 .about-text p {
     max-height: 12vh;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .about-text .about-backdrop {
@@ -310,3 +311,28 @@ table {
     border-radius: 20px;
     background-color: white;
 }
+
+.average {
+    vertical-align: top;
+    height: 50px;
+}
+
+.average h2{
+    font-size: 11vw;
+    margin: 0;
+    line-height: 0.75;
+    text-align: top;
+    letter-spacing: -2vw;
+    
+}
+
+.reviews .average-text {
+    line-height: 1.1;
+    font-size: 4vw;
+    width: 14vw;
+}
+
+.reviews .stars {
+    padding-top: 2vw;
+}
+
