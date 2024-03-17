@@ -37,7 +37,7 @@ item.forEach(link => {
 //Categories swiper
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
-  spaceBetween: 10,
+  spaceBetween: 8,
   freeMode: true,
   pagination: {
     el: ".swiper-pagination",
@@ -45,34 +45,10 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
-//Slide descriptions up when clicked
-var text = document.querySelectorAll('.description');
-var image = document.querySelector('.swiper-wrapper img');
-
-function showDescription (e) {
-    if (e.style.height == '100%') {
-        e.style.overflow = 'hidden';
-        e.style.whiteSpace = 'nowrap';
-        e.style.height = 'auto';
-    }
-    else {
-        e.style.overflow = 'auto';
-        e.style.whiteSpace = 'wrap';
-        e.style.height = '100%';
-    }
-}
-
-text.forEach(link => {
-    link.addEventListener('click', (e) => {
-        showDescription(e.target.parentNode)
-    });
-});
-
-var clickableImage = document.querySelectorAll('.swiper-slide img');
+var clickableImage = document.querySelectorAll('.swiper-slide .name');
 
 function goTOCheckOut() {
-    window.location.href = 'https://samanseso.github.io/122Project/check_out.html';
+    window.location.href = 'check_out.html';
 }
 
 clickableImage.forEach(link => {
