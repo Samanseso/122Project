@@ -18,7 +18,7 @@ function underline_first() {
 
  //Line movement for search categories
 var marker = document.querySelector('#marker');
-var item = document.querySelectorAll('.search_categories button');
+var item = document.querySelectorAll('.text_overlay .search_categories button');
 var search_input= document.querySelector('#search_input');
 
 function underline(e) {
@@ -37,26 +37,13 @@ item.forEach(link => {
 //Categories swiper
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
-  spaceBetween: 8,
+  spaceBetween: 100,
   freeMode: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
 });
-
-var clickableImage = document.querySelectorAll('.swiper-slide .name');
-
-function goTOCheckOut() {
-    window.location.href = 'check_out.html';
-}
-
-clickableImage.forEach(link => {
-    link.addEventListener('click', (e) => {
-        goTOCheckOut(e.target);
-    })
-})
-
 
 var aboutText = document.querySelector('.about-text p');
 var backdrop = document.querySelector('.about-text .about-backdrop');
