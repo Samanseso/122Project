@@ -18,7 +18,7 @@ function underline_first() {
 
  //Line movement for search categories
 var marker = document.querySelector('#marker');
-var item = document.querySelectorAll('.text_overlay .search_categories button');
+var item = document.querySelectorAll('.search_categories button');
 var search_input= document.querySelector('#search_input');
 
 function underline(e) {

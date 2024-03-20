@@ -55,6 +55,10 @@ header {
     margin: 0;
 }
 
+.logo a {
+    color: black !important;
+}
+
 .fa-car-side {
     font-size: 6vw;
 }
