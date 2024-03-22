@@ -77,7 +77,7 @@ header {
     z-index: 3; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 100%;
-    background-color: #433831; 
+    background-color: #676852; 
     overflow-x: hidden; /* Disable horizontal scroll */    
     padding-top: 10px; /* Place content 20px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -110,27 +110,17 @@ header {
     color: #f5f5f5 !important;
 }
 
-#button {
-    text-align: center;
-}
 
-#nav_sign_in {
+nav #nav_sign_in {
     width: 80%;
     background-color: #f5f5f5;
+    color: black !important;
     padding: 0;
-    margin: 25px 0 10px 0;
-    text-align: center;
+    margin: 25px auto 10px auto;
     border: none;
     font-size: 4vw;
     padding: 5px 0;
     border-radius: 25px;
-}
-
-.fa-circle-xmark {
-    position: absolute;
-    right: 10px;
-    font-size: 6vw;
-    color: #f5f5f5 !important;
 }
 
 #button {
@@ -195,7 +185,12 @@ main {
     font-size: 4vw;
 }
 
+.carousel-item img {
+    border-radius: 10px;
+}
+
 .backdrop {
+    border-radius: 10px;
     position: absolute;
     height: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
@@ -221,7 +216,7 @@ main {
 
 .swiper-slide img {
     width: 100%;
-    border-radius: 7px;
+    border-radius: 5px;
 }
 
 .name {

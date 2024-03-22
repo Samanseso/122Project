@@ -61,3 +61,36 @@ function aboutSLideDown () {
         backdrop.style.display = 'block';
     }
 }
+
+var main = document.querySelector('main');
+
+
+function showSignUp() {
+    main.style.transform = 'translate(100%, 0)';
+}
+
+function showLogInBtn() {
+    main.style.transform = 'translate(50%, 0)';
+}
+
+
+var login_marker = document.querySelector('header .login-marker');
+var login_item = document.querySelectorAll('header button');
+
+login_item.forEach(link => {
+    link.addEventListener('click', (e) => {
+        login_underline(e.target)
+    });
+});
+
+
+var first_login = document.querySelector('header #first_login');
+function underline_first_login() {
+    login_marker.style.left = first_login.offsetLeft + 'px';
+    login_marker.style.width = first_login.offsetWidth + 'px';
+}
+
+function login_underline(e) {
+    login_marker.style.left = e.offsetLeft + 'px';
+    login_marker.style.width = e.offsetWidth + 'px';
+}

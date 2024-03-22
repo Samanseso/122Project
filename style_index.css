@@ -82,7 +82,7 @@ header {
     z-index: 3; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 100%;
-    background-color: #433831; 
+    background-color: #676852; 
     overflow-x: hidden; /* Disable horizontal scroll */    
     padding-top: 10px; /* Place content 20px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -108,23 +108,12 @@ header {
     opacity: 0.5;
 }
 
-.fa-circle-xmark {
-    position: absolute;
-    right: 10px;
-    font-size: 6vw;
-    color: #f5f5f5 !important;
-}
-
-#button {
-    text-align: center;
-}
-
 #nav_sign_in {
     width: 80%;
     background-color: #f5f5f5;
+    color: black !important;
     padding: 0;
-    margin: 25px 0 10px 0;
-    text-align: center;
+    margin: 25px auto 10px auto;
     border: none;
     font-size: 4vw;
     padding: 5px 0;
@@ -186,8 +175,7 @@ header {
 
 #button-addon2 {
     border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    background-color: #676852;
+    border-bottom-right-radius: 25px;  
 }
 
 .title {
@@ -240,7 +228,7 @@ footer {
     font-size: 6vw;
 }
 
-a {
+.sidenav a, footer a {
     color: white !important;
 }
 
