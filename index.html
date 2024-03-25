@@ -56,10 +56,61 @@
 
             <div class="search_bar">
                 <div class="input-group mb-3">
-                    <input id="search_input" type="text" class="form-control" placeholder="Search places..." aria-label="Search places..." aria-describedby="button-addon2">
+                    <input id="search_input" type="text" class="form-control" onkeyup="myFunction()" placeholder="Search places..." aria-label="Search places..." aria-describedby="button-addon2">
                     <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass">&nbsp</i></button>
-                  </div>
+                </div>
+                <div class="search_items">
+                    <li><a href="#">Kailey </a></li>
+                    <li><a href="#">Kailey </a></li>
+                    <li><a href="#">Billy</a></li>
+                    <li><a href="#">Bob</a></li>
+                    <li><a href="#">Calvin</a></li>
+                    <li><a href="#">Christina</a></li>
+                    <li><a href="#">Cindy</a></li>
+
+                    <li><a href="#">Joey</a></li>
+                    <li><a href="#">Kiana </a></li>
+                    <li><a href="#">Leonidas</a></li>
+                    <li><a href="#">Hadlee</a></li>
+                    <li><a href="#">Zander</a></li>
+                    <li><a href="#">Bexley</a></li>
+                    <li><a href="#">Lucas</a></li>
+
+                    <li><a href="#">Annie</a></li>
+                    <li><a href="#">Bradley</a></li>
+                    <li><a href="#">King</a></li>
+                    <li><a href="#">Victoria</a></li>
+                    <li><a href="#">Justice</a></li>
+                    <li><a href="#">Evander</a></li>
+                    <li><a href="#">Tracy</a></li>
+                </div>
             </div>
+
+            <style>
+                .search_items {
+                    display: none;
+                }
+
+                .search_items li {
+                    list-style-type: none;
+                }
+
+                .search_items li a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                .search_items li a {
+                    border: 1px solid #ddd; /* Add a border to all links */
+                    margin-top: -1px; /* Prevent double borders */
+                    background-color: #f6f6f6; /* Grey background color */
+                    padding: 12px; /* Add some padding */
+                    text-decoration: none; /* Remove default text underline */
+                    font-size: 18px; /* Increase the font-size */
+                    color: black; /* Add a black text color */
+                    display: block; /* Make it into a block element to fill the whole list */
+                }
+            </style>
         </div>
 
         <div class="categorties">
