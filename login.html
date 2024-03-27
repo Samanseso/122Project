@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trippings - Philppines</title>
-    <link rel="stylesheet" href="style_login.css">
+    <link rel="stylesheet" href="css/style_login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -42,19 +42,15 @@
                     <label for="floatingPassword">Password</label>
                 </div>
                 
-                <div class="form-check form-check-inline">
+                <div class="form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                     <label class="form-check-label" for="inlineCheckbox1">I agree to the <a href="#">Terms & Conditions</a></label>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">Remember Me</label>
-                </div>
-                <a href="#" class="btn btn-primary">Sign up</a>
+                <a href="#" class="login-btn btn btn-primary">Sign up</a>
             </form> 
             <div class="links">
                 <div class="line">
-                    <hr width="35%"><p>Or sign in with</p><hr width="35%">
+                    <hr><p>Or sign up with</p><hr>
                 </div>
                 <div class="buttons">
                     <a href="#" class="btn btn-primary"><i class="fa-brands fa-google"></i>&nbsp;&nbsp;Google</a>
@@ -75,19 +71,20 @@
                     <label for="floatingPassword">Password</label>
                 </div>
 
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Remember Password</a></label>
-                </div>
-                <div class="form-check form-check-inline">
+                <div class="form-check form-check-inline" style="display: flex; justify-content: space-between;">
+                    <div>
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Remember me</a></label>
+                    </div>
                     <a href="#">Forgot password?</a>
                 </div>
-                <a href="#" class="btn btn-primary">Log in</a>
+                
+                <a href="#" class="login-btn btn btn-primary">Log in</a>
             </form>
 
             <div class="links">
                 <div class="line">
-                    <hr width="35%"><p>Or sign in with</p><hr width="35%">
+                    <hr><p>Or log in with</p><hr>
                 </div>
                 <div class="buttons">
                     <a href="#" class="btn btn-primary"><i class="fa-brands fa-google"></i>&nbsp;&nbsp;Google</a>
@@ -99,5 +96,5 @@
     <footer> 
     </footer>
 </body>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </html>

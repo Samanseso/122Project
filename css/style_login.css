@@ -51,7 +51,7 @@ header i {
 
 header .login-marker {
     position: absolute;
-    height: 2px;
+    height: 1px;
     background-color:white;
     bottom: 9px;
     transition: all 0.5s ease-in-out;;
@@ -59,6 +59,7 @@ header .login-marker {
 }
 
 header button {
+    font-weight: 300;
     color: white;
     font-size: 5vw;
     width: 23%;
@@ -74,6 +75,7 @@ main {
     right: 100%;
     transform: translate(100%, 0);
     transition: all 0.5s ease-in-out;
+    overflow: hidden;
 }
 
 main .signup {
@@ -86,6 +88,58 @@ main .login {
     margin-left: 5vw;
 }
 
+main h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 9vw;
+    font-weight: 300;
+}
+
+main form {
+    font-size: calc(4vw + 2px);
+}
+
+
+main .form-check-inline {
+    margin: 10px 0 20px 0;
+}
+
+main .login-btn {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+main .links .line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+main .links .line hr{
+    width: 33%;
+}
+
+main .links .line p {
+    font-size: calc(4vw + 2px);
+    transform: translate(0, calc(7% + 2vw));
+}
+
+main .links .buttons {
+    text-align: center;
+}
+
+main .links .buttons a{
+    width: 40%;
+    margin: 0 5px;
+}
+
+main a {
+    font-size: calc(4vw + 2px) !important;
+}
+
 footer {
     width: 90vw;
     height: 50px;
@@ -95,3 +149,4 @@ footer {
     position: absolute;
     top: calc(100vh - 50px);
 }
+
